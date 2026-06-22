@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang="uk"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Натяжні стелі — Березне · ціна одразу</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+ :root{
+   --bg:#0a0b0f;--card:#15171f;--card2:#1a1d27;
+   --ac:#c9a86a;--ac2:#ecd49b;--tx:#eef0f4;--mut:#9499a4;--line:#262a33;
+   --gold:linear-gradient(135deg,#c9a86a 0%,#ecd49b 50%,#c9a86a 100%);
+ }
+ *{box-sizing:border-box;margin:0;padding:0}
+ html{scroll-behavior:smooth}
+ body{font-family:'Manrope',system-ui,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--tx);line-height:1.5;overflow-x:hidden}
+ body::before{content:"";position:fixed;inset:0;z-index:-1;
+   background:
+     radial-gradient(600px circle at 15% 8%,rgba(201,168,106,.10),transparent 45%),
+     radial-gradient(680px circle at 88% 92%,rgba(201,168,106,.07),transparent 50%),
+     var(--bg);
+   animation:bgshift 20s ease-in-out infinite alternate}
+ @keyframes bgshift{from{background-position:0 0,0 0,0 0}to{background-position:36px -28px,-36px 28px,0 0}}
+ .wrap{max-width:700px;margin:0 auto;padding:0 16px}
+
+ .rv{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+ body.in .rv{opacity:1;transform:none}
+ body.in .d1{transition-delay:.07s}body.in .d2{transition-delay:.14s}
+ body.in .d3{transition-delay:.22s}body.in .d4{transition-delay:.30s}body.in .d5{transition-delay:.38s}
+
+ header{padding:24px 0 6px;display:flex;align-items:center;gap:13px}
+ .logo{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#15120a;
+   background:var(--gold);background-size:200% 200%;animation:shimmer 6s linear infinite;box-shadow:0 6px 22px rgba(201,168,106,.28)}
+ @keyframes shimmer{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+ .brand b{font-size:19px;letter-spacing:2px}
+ .brand span{display:block;color:var(--mut);font-size:12px;letter-spacing:.5px}
+
+ .hero{padding:30px 0 8px}
+ .hero h1{font-size:30px;line-height:1.18;font-weight:800;letter-spacing:-.3px}
+ .hero h1 em{font-style:normal;background:var(--gold);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 5s linear infinite}
+ .hero p{color:var(--mut);margin-top:12px;font-size:15.5px;max-width:560px}
+
+ .card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;padding:20px;margin:20px 0;
+   box-shadow:0 18px 50px -22px rgba(0,0,0,.75)}
+ .card h2{font-size:12px;text-transform:uppercase;letter-spacing:1.6px;color:var(--mut);margin-bottom:15px;font-weight:600}
+
+ label{display:block;font-size:13px;color:var(--mut);margin:12px 0 6px}
+ input{width:100%;background:#0e1015;border:1px solid var(--line);color:var(--tx);border-radius:11px;font-size:15px;padding:13px;transition:border-color .25s,box-shadow .25s}
+ input:focus{outline:0;border-color:var(--ac);box-shadow:0 0 0 3px rgba(201,168,106,.14)}
+ input::placeholder{color:#5b616c}
+ .row{display:flex;gap:12px}.row>div{flex:1}
+
+ .opts{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+ .opt{flex:1;min-width:150px;border:1px solid var(--line);border-radius:11px;padding:12px 13px;cursor:pointer;font-size:14px;
+   display:flex;align-items:center;gap:9px;transition:border-color .25s,background .25s,transform .12s;user-select:none}
+ .opt:hover{border-color:#3b4150}
+ .opt:active{transform:scale(.98)}
+ .opt .bx{width:20px;height:20px;border-radius:6px;border:1.5px solid #3b4150;display:flex;align-items:center;justify-content:center;transition:.25s;flex:none}
+ .opt .bx svg{width:12px;height:12px;opacity:0;transform:scale(.4);transition:.25s}
+ .opt.on{border-color:var(--ac);background:#1b1810}
+ .opt.on .bx{background:var(--gold);border-color:transparent}
+ .opt.on .bx svg{opacity:1;transform:none}
+ .opt .pl{margin-left:auto;color:var(--ac);font-size:13px;font-weight:600}
+
+ .price{margin-top:18px;background:radial-gradient(120% 140% at 50% 0%,#1d1a12,#0e1015);border:1px solid rgba(201,168,106,.35);border-radius:14px;padding:20px;text-align:center;position:relative;overflow:hidden}
+ .price.bump{animation:bump .5s cubic-bezier(.2,.8,.2,1)}
+ @keyframes bump{0%{transform:scale(1)}30%{transform:scale(1.035)}100%{transform:scale(1)}}
+ .price .glow{position:absolute;inset:0;background:radial-gradient(60% 80% at 50% 0%,rgba(201,168,106,.20),transparent 70%);pointer-events:none;opacity:0;transition:opacity .5s}
+ .price.bump .glow{opacity:1}
+ .price .big{position:relative;font-size:36px;font-weight:800;background:var(--gold);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.5px;animation:shimmer 5s linear infinite}
+ .price .sm{position:relative;color:var(--mut);font-size:13px;margin-top:6px}
+
+ .btn{display:block;width:100%;text-align:center;background:var(--gold);background-size:200% auto;color:#15120a;font-weight:800;border:0;border-radius:13px;padding:16px;font-size:16px;margin-top:16px;cursor:pointer;text-decoration:none;position:relative;overflow:hidden;letter-spacing:.2px;
+   box-shadow:0 12px 30px -12px rgba(201,168,106,.5);transition:transform .15s,box-shadow .25s}
+ .btn:hover{transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(201,168,106,.66)}
+ .btn:active{transform:translateY(0)}
+ .btn::after{content:"";position:absolute;top:0;left:-60%;width:38%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-18deg);animation:sweep 4.8s ease-in-out infinite}
+ @keyframes sweep{0%,62%{left:-60%}82%,100%{left:130%}}
+ .note{font-size:12px;color:var(--mut);text-align:center;margin-top:10px}
+
+ .why{display:grid;gap:11px;margin-top:4px}
+ .why div{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 16px;font-size:14px;color:var(--tx);transition:border-color .25s,transform .25s}
+ .why div:hover{border-color:rgba(201,168,106,.42);transform:translateX(3px)}
+ .why b{color:var(--ac)}
+
+ footer{color:var(--mut);font-size:13px;text-align:center;padding:30px 0 42px}
+ footer a{color:var(--ac);text-decoration:none}
+ @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style></head><body>
+<div class="wrap">
+ <header class="rv">
+  <div class="logo">НС</div>
+  <div class="brand"><b>НАТЯЖНІ СТЕЛІ</b><span>Березне та район</span></div>
+ </header>
+
+ <section class="hero">
+  <h1 class="rv d1">Натяжні стелі у Березному з <em>ціною одразу</em></h1>
+  <p class="rv d2">Введіть розміри кімнати, і ціна зʼявиться за секунду. Якщо влаштовує, лишаєте заявку, і майстер приїжджає на безкоштовний замір.</p>
+ </section>
+
+ <div class="card rv d3">
+  <h2>Прорахунок ціни</h2>
+  <div class="row">
+   <div><label>Довжина, м</label><input id="len" type="number" inputmode="decimal" min="0" step="0.1" placeholder="напр. 4"></div>
+   <div><label>Ширина, м</label><input id="wid" type="number" inputmode="decimal" min="0" step="0.1" placeholder="напр. 3"></div>
+  </div>
+  <div class="opts">
+   <div class="opt on" data-opt="prof"><span class="bx"><svg viewBox="0 0 24 24" fill="none" stroke="#15120a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span>Алюмінієвий профіль<span class="pl">90 грн/м.п.</span></div>
+   <div class="opt" data-opt="plint"><span class="bx"><svg viewBox="0 0 24 24" fill="none" stroke="#15120a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span>Стельовий плінтус<span class="pl">75 грн/м.п.</span></div>
+  </div>
+  <label style="margin-top:14px">Точок під люстру, шт (300 грн/шт)</label>
+  <input id="lustry" type="number" inputmode="numeric" min="0" step="1" placeholder="напр. 1">
+  <div class="price" id="price">
+   <div class="glow"></div>
+   <div class="big" id="sum">0 грн</div>
+   <div class="sm" id="meta">Площа 0 м²</div>
+  </div>
+  <a class="btn" href="#zayavka">Лишити заявку за цією ціною</a>
+  <div class="note">Ціна орієнтовна за вашими розцінками. Точну фіксуємо на безкоштовному замірі.</div>
+ </div>
+
+ <div class="why">
+  <div class="rv d4"><b>Ціна одразу.</b> Клієнт бачить вартість ще до заявки, без очікування прорахунку.</div>
+  <div class="rv d4"><b>Безкоштовний замір.</b> Майстер приїде у зручний час, заміряє точно й зафіксує остаточну ціну.</div>
+  <div class="rv d5"><b>Натяжні стелі під ключ.</b> Полотно, алюмінієвий профіль, плінтус, точки під люстру, акуратний монтаж.</div>
+ </div>
+
+ <div class="card rv d5" id="zayavka">
+  <h2>Лишити заявку</h2>
+  <label>Імʼя</label><input id="nm" placeholder="Ваше імʼя">
+  <label>Телефон</label><input id="ph" inputmode="tel" placeholder="+380...">
+  <button class="btn" id="send" style="margin-top:18px">Відправити заявку</button>
+  <div class="note" id="done"></div>
+ </div>
+
+ <footer class="rv">
+  Натяжні стелі · Березне та район
+ </footer>
+</div>
+<script>
+ const len=document.getElementById('len'),wid=document.getElementById('wid'),
+       sum=document.getElementById('sum'),meta=document.getElementById('meta'),
+       priceBox=document.getElementById('price'),
+       lustryEl=document.getElementById('lustry');
+ const RATE=330;   // грн/м² натяжна стеля
+ const PROF=90;    // грн/м.п. алюмінієвий профіль (по периметру)
+ const PLINT=75;   // грн/м.п. стельовий плінтус (по периметру)
+ const LUSTRA=300; // грн за точку під люстру
+ let profOn=true, plintOn=false, shown=0, raf=null;
+ const fmt=n=>n.toLocaleString('uk-UA');
+ function animateTo(target){
+   cancelAnimationFrame(raf);
+   const from=shown, diff=target-from, t0=performance.now(), dur=420;
+   (function step(t){
+     const k=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-k,3);
+     shown=Math.round(from+diff*e);
+     sum.textContent=fmt(shown)+' грн';
+     if(k<1) raf=requestAnimationFrame(step);
+   })(t0);
+ }
+ function calc(bump){
+   const L=parseFloat(len.value)||0, W=parseFloat(wid.value)||0;
+   const a=L*W, perim=2*(L+W), lustry=parseInt(lustryEl.value)||0;
+   const total=Math.round(a*RATE + (profOn?perim*PROF:0) + (plintOn?perim*PLINT:0) + lustry*LUSTRA);
+   animateTo(total);
+   let m='Площа '+a.toFixed(1)+' м²';
+   if(perim>0) m+=' · периметр '+perim.toFixed(1)+' м.п.';
+   if(lustry>0) m+=' · люстри '+lustry+' шт';
+   meta.textContent=m;
+   if(bump){priceBox.classList.remove('bump');void priceBox.offsetWidth;priceBox.classList.add('bump');}
+ }
+ [len,wid,lustryEl].forEach(e=>e.addEventListener('input',()=>calc(false)));
+ document.querySelectorAll('.opt').forEach(o=>o.addEventListener('click',()=>{
+   o.classList.toggle('on');
+   if(o.dataset.opt==='prof') profOn=o.classList.contains('on');
+   if(o.dataset.opt==='plint') plintOn=o.classList.contains('on');
+   calc(true);
+ }));
+ document.getElementById('send').addEventListener('click',()=>{
+   const n=document.getElementById('nm').value.trim(), p=document.getElementById('ph').value.trim(), d=document.getElementById('done');
+   if(!n||!p){d.textContent='Вкажіть імʼя і телефон.';return;}
+   d.textContent='Дякуємо, '+n+'! Ціна для вас: '+sum.textContent+'. Звʼяжемось щодо безкоштовного заміру.';
+ });
+ requestAnimationFrame(()=>requestAnimationFrame(()=>document.body.classList.add('in')));
+</script>
+</body></html>
